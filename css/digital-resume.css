@@ -7,26 +7,24 @@ body{
 h1{
     color: #4CB61A;
 }
-#nav ul{
-    list-style: none;
-}
 
 #nav li{
-    display: inline;
+    display: inline-block;
 }
 #nav{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: black;
+    background-color: rgb(255, 250, 250);
 }
 #img{
     border-radius: 100%;
     border: 5px solid black;
-    width:10vw;
-    height: 10vw;
+    width:15vw;
+    height: 15vw;
 }
 #profile{
-    background: #181717 url(https://cdn.pixabay.com/photo/2018/01/23/12/00/field-3101302_960_720.jpg);
+    height: 300px;
+    background: #181717 url(https://cdn.pixabay.com/photo/2015/07/05/10/18/tree-832079_960_720.jpg);
     background-size: cover;
     background-position: center;
     margin-top:10px;
@@ -42,13 +40,13 @@ h1{
 
 #profile h1{
     position: absolute;
-    top: 35%;
-    left: 25%;
+    top: 20%;
+    left: 35%;
 }
 #profile h2{
     position: absolute;
-    top: 55%;
-    left: 25%;
+    top: 30%;
+    left: 35%;
 }
 
 #profile-info{
@@ -63,6 +61,9 @@ h1{
     color: #FFFFFF;
     flex :0.5;
     margin-right: 10%;
+}
+
+.info-1 p{
     line-height: 1.7rem;
     font-size: 1.5rem;
 }
@@ -75,10 +76,12 @@ h1{
 .info-2 ul{
     list-style: none;
     line-height: 3rem;
-    font-size: larger;
+    font-size:1.5rem;
+    color: #FFFFFF;
 }
 .info-2 i{
     color:#4CB61A;
+    padding-right: 50px;
 }
 
 #hero{
@@ -135,5 +138,13 @@ footer{
 
 .contact-box-2 h1{
     position: absolute;
-    padding-top: 32%;
+    padding-top: 300px;
 }
+
+#img-contact{
+    border-radius: 100%;
+    width: 15vw;
+    height: 15vw;
+}
+
+  

@@ -9,18 +9,19 @@
 </head>
 
 <body>
+    <aside id="nav">
+        <ul>
+            <h3>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#contact-me">CONTACT ME</a></li>
+                <li><a href="#experience">EXPERINECE</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#social">SOCIAL</a></li>
+            </h3>
+        </ul>
+    </aside>
     <header>
-        <div id="nav">
-            <ul>
-                <h3>
-                    <li><a href="#experience">EXPERINECE</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#about">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#contact info">CONTACT INFO</a></li>
-                </h3>
-            </ul>
-        </div>
         <div id="hero">
             <div id="profile">
                 <img id="img" src="./images/profile.jpg" alt="profile picture" width="300" height="300">
@@ -41,18 +42,20 @@
                 </p>
             </div>
             <div class="info-2">
-                <h1>SOCIAL</h1>
+                <h1 id="contact-me">CONTACT ME</h1>
                 <br>
                 <ul>
-                    <h2>
+                    <p>
                         <li><i class="fa-brands fa-whatsapp"></i>+27 797 738 156</li>
+                    </p>
+                    <p>
                         <li><i class="fa-solid fa-envelope "></i>yusrinelson17@gmail.com</li>
-                    </h2>
+                    </p>
                 </ul>
             </div>
         </div>
     </header>
-    <section >
+    <section>
         <div class="content-1">
             <h1 id="experience">EXPERIENCE</h1>
             <br>
@@ -80,36 +83,47 @@
             <h1 id="skills">SKILLS</h1>
             <br>
             <ul>
-                <li></li>
-                <li></li>
+                <p>
+                    <li><i class="fa-brands fa-html5"><b>HTML</b></i></li>
+                </p>
+                <p>
+                    <li><i class="fa-brands fa-css3-alt"><b>CSS</b></i></li>
+                </p>
             </ul>
         </div>
     </section>
     <footer>
-
+        <h1 id="social">SOCIAL</h1>
+        <br>
         <div class="contact-box-1">
             <img id="img-contact" src="./images/profile.jpg" alt="profile picture" width="300" height="300">
             <h1>
                 <ul>
-                    <li><i class="fa-brands fa-github"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><a href="https://github.com/yusrinelson" target="_blank"><i class="fa-brands fa-github"></a></i>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/yusri-nelson-04b51125b/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></a></i></li>
+                    <li><a href="https://www.instagram.com/yusri_nelson/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i
+                                class="fa-brands fa-instagram"></a></i></li>
                 </ul>
             </h1>
         </div>
 
         <form action="https://formsubmit.co/yusrinelson17@gmail.com" method="POST">
             <div class="contact-box-2">
-                <label for="name"><b>Name</b></label>
-                <input id="name" type="text" name="name" placeholder="full name..." required>
+                <p>
+                    <label for="name"><b>Name</b></label>
+                    <input id="name" type="text" name="name" placeholder="full name..." required>
 
-                <label for="email"><b>Email</b></label>
-                <input id="email" type="text" name="email" placeholder="e-mail..." required>
-                <br>
-                <label for="feedback"><b>Feedback</b></label>
-                <br>
-                <textarea type="text" rows="10" cols="20" placeholder="feedback..."> </textarea>
-                <br>
-                <input id="submit" type="submit" value="Submit">
+                    <label for="email"><b>Email</b></label>
+                    <input id="email" type="text" name="email" placeholder="e-mail..." required>
+                    <br>
+                    <label for="feedback"><b>Feedback</b></label>
+                    <br>
+                    <textarea type="text" rows="10" cols="20" placeholder="feedback..."> </textarea>
+                    <br>
+                    <input id="submit" type="submit" value="Submit">
+                </p>
             </div>
         </form>
     </footer>

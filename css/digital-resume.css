@@ -1,23 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     margin: 0%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 body {
     background-color: #181717;
 }
-
+p{
+    font-family: 'Lato', sans-serif;
+}
 h1 {
     color: #4CB61A;
+    font-family: 'Anton', sans-serif;
+    font-weight: 1;
 }
 
+/* navigational bar */
+#nav ul a{
+    text-decoration: none;
+}
 #nav li {
-    display: inline-block;
+    display: inline;
+    padding-inline: 14px;
 }
-
+#nav li:hover{
+    background-color: #4CB61A;
+}
+#nav a:visited{
+    color:#fafafa;
+}
 #nav {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(255, 250, 250);
+    background-color: rgb(0,0,0,.8);
+    position: sticky;
+    width: 100%;
+    top:0;
+    z-index: 1;
 }
 
 #img {
@@ -27,6 +49,7 @@ h1 {
     height: 15vw;
 }
 
+/* when the screen gets lower than 767px */
 @media only screen and (max-width: 767px) {
     #profile {
         display: flex;
@@ -40,25 +63,25 @@ h1 {
         background-size: cover;
     }
 }
-
 @media only screen and (max-width: 767px) {
     #profile h1 {
         position: relative;
         padding-top: 85px;
-        padding-left: 7px;
+        padding-left: 30px;
     }
 
     #profile h2 {
         position: relative;
-        padding-top: 80px;
+        padding-top: 70px;
     }
 }
 
+/* if screen is bigger than 767px */
 @media only screen and (min-width: 767px) {
     #hero {
         display: flex;
         position: relative;
-        border-bottom: 1px solid black;
+        border-bottom: 3px solid #4CB61A;
         padding: 30px 0px 30px 100px;
         background: #181717 url(https://cdn.pixabay.com/photo/2015/07/05/10/18/tree-832079_960_720.jpg);
         background-position: center;
@@ -75,9 +98,10 @@ h1 {
 #hero h2 {
     position: absolute;
     left: 30%;
-    top: 49%;
+    top: 56%;
 }
 
+/* container under hero: layout changes if screen is bigger than 767px */
 @media only screen and (min-width: 767px) {
     #profile-info {
         display: flex;
@@ -88,6 +112,7 @@ h1 {
     }
 }
 
+/* profile-info container about me */
 .info-1 {
     padding-left: 30px;
     padding-top: 30px;
@@ -101,6 +126,7 @@ h1 {
     font-size: 1.5rem;
 }
 
+/* contact me container */
 .info-2 {
     padding-left: 30px;
     padding-top: 30px;
@@ -120,6 +146,7 @@ h1 {
     padding-right: 50px;
 }
 
+/* section layout changes if the screen is bigger than 767px */
 @media only screen and (min-width: 767px) {
     section {
         padding-bottom: 40px;
@@ -131,6 +158,7 @@ h1 {
     }
 }
 
+/* experience and education container */
 .content-1 {
     border-radius: 0px 20px 20px 0px;
     padding-top: 30px;
@@ -139,15 +167,31 @@ h1 {
     padding-bottom: 30px;
     padding-left: 30px;
     background-color: #D9D9D9;
+    
 }
 
+/* skills container */
 .content-2 {
+    color: #fafafa;
     padding-top: 30px;
     padding-left: 30px;
     line-height: 1.7rem;
     font-size: 1.5rem;
+    
+}
+.content-2 i{
+    color:#4CB61A;
+}
+.content-2 b{
+    color: #fafafa;
+    padding-inline: 10px;
+    letter-spacing: 5px;
+}
+.content-2 li{
+    list-style: none;
 }
 
+/* splits content into 2 */
 footer {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -157,6 +201,16 @@ footer {
 
 }
 
+/* heading in footer */
+#social{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+left:50%;
+}
+
+/* picture and social links */
 .contact-box-1 {
     position: relative;
     display: flex;
@@ -169,20 +223,24 @@ footer {
     display: inline;
 
 }
-
+.contact-box-1 a:visited{
+    color: #4CB61A;
+}
 .contact-box-1 ul {
     list-style: none;
     position: relative;
     top: 100px;
-    right: 160px
+    right: 170px
 }
 
+/* forms container */
 .contact-box-2 {
     background-color: #D9D9D9;
     padding: 30px;
     border-radius: 20px 0px 0px 20px;
 }
 
+/* size of image for tablet and mobile */
 @media screen and (max-width:767px) {
     #img {
         width: 159px;
@@ -196,19 +254,21 @@ footer {
     height: 150px;
 }
 
+/* font of body */
 @media screen and (max-width:767px) {
     body {
         font-size: 1em;
     }
 }
 
+/* profile-info */
 @media screen and (max-width:767px) {
 .info-2{
     padding-bottom: 30px;
 }
 }
+/* when the layout change gives a border under skills */
 @media screen and (max-width:767px) {
-
     .content-2 {
         border-bottom: 1px solid #4CB61A;
         padding-bottom: 30px;

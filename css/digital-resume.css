@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@keyframes icons{
-    0% {transform:rotate(270deg);}
+
+@keyframes icons {
+    0% {
+        transform: rotate(270deg);
+    }
 }
+
 * {
     margin: 0%;
     scroll-behavior: smooth;
@@ -12,9 +16,11 @@
 body {
     background-color: #181717;
 }
-p{
+
+p {
     font-family: 'Lato', sans-serif;
 }
+
 h1 {
     color: #4CB61A;
     font-family: 'Anton', sans-serif;
@@ -22,26 +28,30 @@ h1 {
 }
 
 /* navigational bar */
-#nav ul a{
+#nav ul a {
     text-decoration: none;
 }
+
 #nav li {
     display: inline;
     padding-inline: 14px;
 }
-#nav li:hover{
+
+#nav li:hover {
     background-color: #4CB61A;
 }
-#nav a:visited{
-    color:#fafafa;
+
+#nav a:visited {
+    color: #fafafa;
 }
+
 #nav {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(0,0,0,.8);
+    background-color: rgb(0, 0, 0, .8);
     position: sticky;
     width: 100%;
-    top:0;
+    top: 0;
     z-index: 1;
 }
 
@@ -66,6 +76,7 @@ h1 {
         background-size: cover;
     }
 }
+
 @media only screen and (max-width: 767px) {
     #profile h1 {
         position: relative;
@@ -171,7 +182,7 @@ h1 {
     padding-bottom: 30px;
     padding-left: 30px;
     background-color: #D9D9D9;
-    
+
 }
 
 /* skills container */
@@ -181,17 +192,20 @@ h1 {
     padding-left: 30px;
     line-height: 1.7rem;
     font-size: 1.5rem;
-    
+
 }
-.content-2 i{
-    color:#4CB61A;
+
+.content-2 i {
+    color: #4CB61A;
 }
-.content-2 b{
+
+.content-2 b {
     color: #fafafa;
     padding-inline: 10px;
     letter-spacing: 5px;
 }
-.content-2 li{
+
+.content-2 li {
     line-height: 2em;
     list-style: none;
 }
@@ -207,12 +221,12 @@ footer {
 }
 
 /* heading in footer */
-#social{
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-left:50%;
+#social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
 }
 
 /* picture and social links */
@@ -228,14 +242,16 @@ left:50%;
     display: inline;
 
 }
-.contact-box-1 a:visited{
+
+.contact-box-1 a:visited {
     color: #4CB61A;
 }
-.contact-box-1 i:hover{
+
+.contact-box-1 i:hover {
     animation-name: icons;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-direction: alternate; 
+    animation-direction: alternate;
     animation-timing-function: ease-in-out;
     transform: scale(50%);
 
@@ -248,15 +264,21 @@ left:50%;
     right: 170px
 }
 
+#img-contact {
+    border-radius: 100%;
+    width: 159px;
+    height: 150px;
+}
+
 /* forms container */
 .contact-box-2 {
     box-shadow: inset 2px -2px 2px 2px #4CB61A;
     background-color: #D9D9D9;
     padding: 30px;
-    border-radius: 20px 0px 0px 20px;   
+    border-radius: 20px 0px 0px 20px;
 }
 
-.contact-box-2 h1{
+.contact-box-2 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,38 +286,48 @@ left:50%;
     margin: 0px 0px 20px 0px;
     border-bottom: 1px solid #181717;
 }
-#name{
-    border-radius: 10px;
-    line-height: 2em;
-    font-size: 1em;
-}
-.contact-box-2  i{
-    color: #4CB61A;
-}
-#email{
+
+#name {
+    width: 130px;
     border-radius: 10px;
     line-height: 2em;
     font-size: 1em;
 }
 
-#submit{
-    border-radius: 10px;
-}
-#submit:hover{
+.contact-box-2 i {
     color: #4CB61A;
 }
+
+#email {
+    width: 130px;
+    border-radius: 10px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+#submit {
+    border-radius: 10px;
+}
+
+#submit:hover {
+    color: #4CB61A;
+}
+
+/* screen size dont go smaller */
+@media screen and (max-width: 425px) {
+    * {
+    width: 425px;
+    overflow: auto;
+    }
+}
+
+
 /* size of image for tablet and mobile */
 @media screen and (max-width:767px) {
     #img {
         width: 159px;
         height: 150px;
     }
-}
-
-#img-contact {
-    border-radius: 100%;
-    width: 159px;
-    height: 150px;
 }
 
 /* font of body */
@@ -307,10 +339,11 @@ left:50%;
 
 /* profile-info */
 @media screen and (max-width:767px) {
-.info-2{
-    padding-bottom: 30px;
+    .info-2 {
+        padding-bottom: 30px;
+    }
 }
-}
+
 /* when the layout change gives a border under skills */
 @media screen and (max-width:767px) {
     .content-2 {
@@ -320,14 +353,15 @@ left:50%;
 }
 
 @media screen and (max-width:767px) {
-    .content-2 label{
+    .content-2 label {
         padding: 0%;
     }
-    
+
 }
+
 /* mobile phone */
-@media screen and (max-width:600px){
-body h1{
-    color: orange;
-}
+@media screen and (max-width:600px) {
+    body h1 {
+        color: orange;
+    }
 }

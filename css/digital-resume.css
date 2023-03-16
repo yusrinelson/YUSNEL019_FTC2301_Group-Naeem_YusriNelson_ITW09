@@ -321,7 +321,6 @@ footer {
 /* screen size dont go smaller */
 @media screen and (max-width: 425px) {
     * {
-    width: 425px;
     overflow: auto;
     }
 }

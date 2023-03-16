@@ -14,9 +14,11 @@ viewports
 - tablet view
 - mobile view
 
-
-
 ## Tech Stack
 
 - HTML
 - CSS
+
+
+## figma link
+-[figma](https://www.figma.com/file/QIpI0tGlPiwsCOgv4bD1HP/YUSNEL019_FTC2301_Group-Naeem_YusriNelson_ITW09?node-id=0-1&t=AtsBCAvkAq5suNLL-0)
